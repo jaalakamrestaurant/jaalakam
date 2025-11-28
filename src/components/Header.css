@@ -167,13 +167,13 @@
         position: fixed;
         top: 0;
         right: -100%;
-        width: 75%;
-        max-width: 300px;
+        width: 280px;
+        max-width: 85vw;
         height: 100vh;
         background: var(--bg-white);
         flex-direction: column;
         align-items: stretch;
-        padding: 80px var(--spacing-lg) var(--spacing-lg);
+        padding: 100px var(--spacing-lg) var(--spacing-lg);
         box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15);
         transition: right 0.3s ease-in-out;
         gap: 0;
@@ -191,6 +191,10 @@
         border-radius: var(--radius-md);
         font-size: 1rem;
         border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .nav a:not(.btn)::after {
+        display: none;
     }
 
     .nav a:last-child {
@@ -234,10 +238,15 @@
 
 @media (max-width: 480px) {
     .nav {
-        width: 85%;
+        width: 85vw;
+        max-width: 320px;
     }
 
     .brand-title {
         font-size: 1.1rem;
+    }
+
+    .brand-tagline {
+        font-size: 0.55rem;
     }
 }
