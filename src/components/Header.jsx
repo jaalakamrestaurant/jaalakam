@@ -8,11 +8,15 @@ const Header = () => {
     useEffect(() => {
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 20);
+            // Close mobile menu when scrolling
+            if (isMobileMenuOpen) {
+                setIsMobileMenuOpen(false);
+            }
         };
 
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+    }, [isMobileMenuOpen]);
 
     useEffect(() => {
         if (isMobileMenuOpen) {
