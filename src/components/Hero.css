@@ -206,7 +206,7 @@
     width: 250px;
     height: 250px;
     top: 50%;
-    right: -100px;
+    right: 0;
     animation: float 12s ease-in-out infinite;
 }
 

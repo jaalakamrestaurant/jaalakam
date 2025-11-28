@@ -175,19 +175,21 @@
         align-items: stretch;
         padding: 100px var(--spacing-lg) var(--spacing-lg);
         box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15);
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in-out, visibility 0.3s;
+        transform: translateX(100%) !important;
+        transition: transform 0.3s ease-in-out, visibility 0.3s, opacity 0.3s;
         gap: 0;
         z-index: 999;
         overflow-y: auto;
-        visibility: hidden;
-        pointer-events: none;
+        visibility: hidden !important;
+        pointer-events: none !important;
+        opacity: 0 !important;
     }
 
     .nav.open {
-        transform: translateX(0);
-        visibility: visible;
-        pointer-events: auto;
+        transform: translateX(0) !important;
+        visibility: visible !important;
+        pointer-events: auto !important;
+        opacity: 1 !important;
     }
 
     .nav a {
