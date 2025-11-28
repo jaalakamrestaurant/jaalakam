@@ -14,7 +14,6 @@ const Location = () => {
 
                 <div className="location-grid">
                     <div className="location-card">
-                        <div className="location-icon">📍</div>
                         <h3>Our Address</h3>
                         <address>
                             <p>
@@ -31,7 +30,7 @@ const Location = () => {
                                 rel="noopener noreferrer"
                                 className="btn btn-primary"
                             >
-                                🗺️ Get Directions
+                                Get Directions
                             </a>
                             <a
                                 href="https://share.google/DFalWeM3m2wDWtzE1"
@@ -39,13 +38,12 @@ const Location = () => {
                                 rel="noopener noreferrer"
                                 className="btn btn-outline"
                             >
-                                ⭐ View Reviews
+                                View Reviews
                             </a>
                         </div>
                     </div>
 
                     <div className="info-card">
-                        <div className="location-icon">✨</div>
                         <h3>What to Expect</h3>
                         <ul className="info-list">
                             <li>
@@ -80,21 +78,18 @@ const Location = () => {
 
                 <div className="contact-info">
                     <div className="contact-item">
-                        <span className="contact-icon">🏢</span>
                         <div>
                             <h4>Powered By</h4>
                             <p>Elite Quad Ventures</p>
                         </div>
                     </div>
                     <div className="contact-item">
-                        <span className="contact-icon">🍽️</span>
                         <div>
                             <h4>Cuisine Type</h4>
                             <p>Authentic Kerala</p>
                         </div>
                     </div>
                     <div className="contact-item">
-                        <span className="contact-icon">🌟</span>
                         <div>
                             <h4>Specialty</h4>
                             <p>Traditional Homely Food</p>

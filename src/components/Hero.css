@@ -60,12 +60,7 @@
 .info-item {
     display: flex;
     align-items: center;
-    gap: 10px;
     padding: 10px 0;
-}
-
-.info-icon {
-    font-size: 1.25rem;
 }
 
 .info-text {

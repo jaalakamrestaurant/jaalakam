@@ -52,7 +52,7 @@ const Header = () => {
                             rel="noopener noreferrer"
                             className="btn btn-primary btn-sm"
                         >
-                            📍 Get Directions
+                            Get Directions
                         </a>
                     </nav>
 

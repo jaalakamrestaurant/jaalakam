@@ -98,25 +98,6 @@
     box-shadow: var(--shadow-md);
 }
 
-.feature-icon {
-    font-size: 2.5rem;
-    display: block;
-    margin-bottom: var(--spacing-sm);
-    animation: float 3s ease-in-out infinite;
-}
-
-.feature-item:nth-child(2) .feature-icon {
-    animation-delay: 0.5s;
-}
-
-.feature-item:nth-child(3) .feature-icon {
-    animation-delay: 1s;
-}
-
-.feature-item:nth-child(4) .feature-icon {
-    animation-delay: 1.5s;
-}
-
 .feature-item h4 {
     font-size: 1.1rem;
     margin-bottom: 4px;

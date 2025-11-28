@@ -14,7 +14,7 @@ const Hero = () => {
                 <div className="hero-grid">
                     <div className="hero-content">
                         <div className="hero-tag">
-                            <span className="tag">✨ Authentic Kerala Kitchen</span>
+                            <span className="tag">Authentic Kerala Kitchen</span>
                         </div>
 
                         <h1 className="hero-title">
@@ -33,7 +33,7 @@ const Hero = () => {
                                 rel="noopener noreferrer"
                                 className="btn btn-primary"
                             >
-                                📍 Open in Google Maps
+                                Open in Google Maps
                             </a>
                             <a
                                 href="https://share.google/DFalWeM3m2wDWtzE1"
@@ -41,17 +41,15 @@ const Hero = () => {
                                 rel="noopener noreferrer"
                                 className="btn btn-outline"
                             >
-                                ⭐ View Reviews
+                                View Reviews
                             </a>
                         </div>
 
                         <div className="hero-info">
                             <div className="info-item">
-                                <span className="info-icon">📍</span>
                                 <span className="info-text">Vibez Gully Gate, Sannatammanahalli, Bengaluru</span>
                             </div>
                             <div className="info-item">
-                                <span className="info-icon">🥥</span>
                                 <span className="info-text">Only coconut oil & ghee • No additives</span>
                             </div>
                         </div>

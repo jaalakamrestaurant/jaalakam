@@ -22,6 +22,25 @@ const Gallery = () => {
         }
     ];
 
+    const features = [
+        {
+            title: 'Coconut Oil & Ghee',
+            description: 'Traditional cooking methods'
+        },
+        {
+            title: 'Fresh Ground Spices',
+            description: 'Our own spice blends'
+        },
+        {
+            title: 'No Additives',
+            description: 'Pure & natural ingredients'
+        },
+        {
+            title: 'Made with Love',
+            description: 'Homely Kerala flavours'
+        }
+    ];
+
     return (
         <section id="gallery" className="gallery section">
             <div className="container">
@@ -59,26 +78,12 @@ const Gallery = () => {
                 </div>
 
                 <div className="gallery-features">
-                    <div className="feature-item">
-                        <span className="feature-icon">🥥</span>
-                        <h4>Coconut Oil & Ghee</h4>
-                        <p>Traditional cooking methods</p>
-                    </div>
-                    <div className="feature-item">
-                        <span className="feature-icon">🌶️</span>
-                        <h4>Fresh Ground Spices</h4>
-                        <p>Our own spice blends</p>
-                    </div>
-                    <div className="feature-item">
-                        <span className="feature-icon">🍃</span>
-                        <h4>No Additives</h4>
-                        <p>Pure & natural ingredients</p>
-                    </div>
-                    <div className="feature-item">
-                        <span className="feature-icon">❤️</span>
-                        <h4>Made with Love</h4>
-                        <p>Homely Kerala flavours</p>
-                    </div>
+                    {features.map((feature, index) => (
+                        <div key={index} className="feature-item">
+                            <h4>{feature.title}</h4>
+                            <p>{feature.description}</p>
+                        </div>
+                    ))}
                 </div>
             </div>
         </section>

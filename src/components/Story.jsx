@@ -28,7 +28,6 @@ const Story = () => {
 
                     <div className="story-grid">
                         <div className="story-card">
-                            <div className="story-icon">🥥</div>
                             <h3>Our Philosophy</h3>
                             <p>
                                 The stubbornness of only using coconut oil and ghee and no other oils, not using
@@ -39,7 +38,6 @@ const Story = () => {
                         </div>
 
                         <div className="story-card">
-                            <div className="story-icon">❤️</div>
                             <h3>More Than Food</h3>
                             <p>
                                 Jaalakam is more than just a restaurant; it's a celebration of friendship, family,
@@ -51,7 +49,6 @@ const Story = () => {
                     </div>
 
                     <div className="story-highlight">
-                        <div className="highlight-icon">✨</div>
                         <p className="highlight-text">
                             At Jaalakam, every plate is a memory – of homes in Kerala, of games watched together,
                             of friendships that turned into family.
