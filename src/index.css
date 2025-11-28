@@ -374,9 +374,15 @@ p {
   }
 
   .container {
-    padding: 0 var(--spacing-sm);
+    padding: 0;
     max-width: 100%;
     overflow-x: hidden;
+  }
+
+  /* Add padding only to specific content inside containers */
+  .section .container>* {
+    padding-left: var(--spacing-sm);
+    padding-right: var(--spacing-sm);
   }
 
   .btn {
@@ -386,8 +392,9 @@ p {
 }
 
 @media (max-width: 480px) {
-  .container {
-    padding: 0 12px;
+  .section .container>* {
+    padding-left: 12px;
+    padding-right: 12px;
   }
 
   .grid-2,
