@@ -50,7 +50,7 @@ const Header = () => {
                     <div className="header-content">
                         <div className="brand" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                             <div className="brand-logo">
-                                <img src="/jaalakam-logo.jpg" alt="Jaalakam Logo" />
+                                <img src="/jaalakam-logo1.png" alt="Jaalakam Logo" />
                             </div>
                             <div className="brand-text">
                                 <h1 className="brand-title">Jaalakam</h1>

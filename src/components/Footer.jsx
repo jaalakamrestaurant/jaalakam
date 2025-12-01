@@ -9,7 +9,7 @@ const Footer = () => {
                 <div className="footer-content">
                     <div className="footer-brand">
                         <div className="footer-logo">
-                            <img src="/jaalakam-logo.jpg" alt="Jaalakam" />
+                            <img src="/jaalakam-logo2.png" alt="Jaalakam" />
                         </div>
                         <h3>Jaalakam</h3>
                         <p className="footer-tagline">Window to flavours of Kerala</p>
