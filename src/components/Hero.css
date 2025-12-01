@@ -652,20 +652,6 @@
         .hero-card-content .hero-badge {
             position: static;
             margin-top: var(--spacing-md);
-            width: fit-content;
-        }
-    }
-
-    @media (max-width: 640px) {
-        .hero {
-            padding: var(--spacing-xl) var(--spacing-md);
-        }
-
-        .hero-title {
-            font-size: 2rem;
-        }
-
-        .hero-subtitle {
             font-size: 1rem;
         }
 
