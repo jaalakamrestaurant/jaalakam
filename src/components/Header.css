@@ -54,7 +54,7 @@
 
 .brand:hover .brand-logo {
     box-shadow: var(--shadow-md);
-    transform: rotate(5deg);
+    transform: rotate(0deg);
 }
 
 .brand-text {
@@ -64,6 +64,7 @@
 }
 
 .brand-title {
+    font-family: "League Spartan", sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: 0.02em;

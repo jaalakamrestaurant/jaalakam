@@ -50,7 +50,7 @@ const Hero = () => {
                                 <span className="info-text">Vibez Gully Gate, Sannatammanahalli, Bengaluru</span>
                             </div>
                             <div className="info-item">
-                                <span className="info-text">Only coconut oil & ghee • No additives</span>
+                                <span className="info-text"></span>
                             </div>
                         </div>
                     </div>
@@ -59,12 +59,18 @@ const Hero = () => {
                         <div className="hero-card">
                             <div className="hero-card-glow"></div>
                             <div className="hero-card-content">
-                                <div className="hero-card-logo">
-                                    <img src="/jaalakam-logo.png" alt="Jaalakam" />
+                                <div className="hero-card-header">
+                                    <div className="hero-card-logo">
+                                        <img src="/jaalakam-logo.jpg" alt="Jaalakam" />
+                                    </div>
+                                    <div className="hero-card-title-group">
+                                        <h3 className="hero-company-name">Jaalakam</h3>
+                                        <p className="hero-company-tagline">WINDOW TO FLAVOURS OF KERALA</p>
+                                    </div>
                                 </div>
 
                                 <div className="hero-card-text">
-                                    <p className="hero-card-eyebrow">Window to flavours of Kerala</p>
+
                                     <h3 className="hero-card-title">Simple, homely & honest food</h3>
                                     <p className="hero-card-description">
                                         Only coconut oil & ghee. No baking soda. No packaged mixes.
