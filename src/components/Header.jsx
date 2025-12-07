@@ -87,8 +87,7 @@ const Header = ({ currentView, setCurrentView }) => {
                             </a>
                             <a href="#contact" onClick={(e) => {
                                 e.preventDefault();
-                                setCurrentView('contact');
-                                setIsMobileMenuOpen(false);
+                                scrollToSection('contact');
                             }}>
                                 Contact Us
                             </a>

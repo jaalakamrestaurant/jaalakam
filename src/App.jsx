@@ -20,16 +20,11 @@ function App() {
     <div className={`app ${isLoaded ? 'loaded' : ''}`}>
       <Header currentView={currentView} setCurrentView={setCurrentView} />
       <main>
-        {currentView === 'home' ? (
-          <>
-            <Hero />
-            <Gallery />
-            <Story />
-            <Location />
-          </>
-        ) : (
-          <DeliveryPromo />
-        )}
+        <Hero />
+        <DeliveryPromo />
+        <Gallery />
+        <Story />
+        <Location />
       </main>
       <Footer />
     </div>
