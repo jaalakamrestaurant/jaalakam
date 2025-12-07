@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import './Header.css';
 
-const Header = () => {
+const Header = ({ currentView, setCurrentView }) => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -30,11 +30,28 @@ const Header = () => {
     }, [isMobileMenuOpen]);
 
     const scrollToSection = (id) => {
-        const element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-            setIsMobileMenuOpen(false);
+        if (currentView !== 'home') {
+            setCurrentView('home');
+            // Wait for render then scroll
+            setTimeout(() => {
+                const element = document.getElementById(id);
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 100);
+        } else {
+            const element = document.getElementById(id);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
         }
+        setIsMobileMenuOpen(false);
+    };
+
+    const handleLogoClick = () => {
+        setCurrentView('home');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        setIsMobileMenuOpen(false);
     };
 
     return (
@@ -48,7 +65,7 @@ const Header = () => {
             <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
                 <div className="container">
                     <div className="header-content">
-                        <div className="brand" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                        <div className="brand" onClick={handleLogoClick}>
                             <div className="brand-logo">
                                 <img src="/jaalakam-logo1.png" alt="Jaalakam Logo" />
                             </div>
@@ -67,6 +84,13 @@ const Header = () => {
                             </a>
                             <a href="#location" onClick={(e) => { e.preventDefault(); scrollToSection('location'); }}>
                                 Visit Us
+                            </a>
+                            <a href="#contact" onClick={(e) => {
+                                e.preventDefault();
+                                setCurrentView('contact');
+                                setIsMobileMenuOpen(false);
+                            }}>
+                                Contact Us
                             </a>
                             <a
                                 href="https://maps.app.goo.gl/JJpMhpVJm73mvMAd7?g_st=ipc"

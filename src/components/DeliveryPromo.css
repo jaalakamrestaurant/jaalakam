@@ -1,0 +1,231 @@
+.delivery-promo-section {
+    padding: var(--spacing-2xl) 0;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+}
+
+.promo-card {
+    background: var(--bg-cream);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    padding: var(--spacing-xl);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Header */
+.promo-header {
+    margin-bottom: var(--spacing-md);
+}
+
+.promo-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--spacing-xs);
+}
+
+.logo-container {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    box-shadow: var(--shadow-sm);
+}
+
+.promo-logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.promo-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 0;
+    line-height: 1.1;
+}
+
+.promo-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: #666;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    display: inline-block;
+    padding: 4px 12px;
+    margin-top: 4px;
+}
+
+/* Announcement Bar */
+.announcement-bar {
+    background-color: #ffd700;
+    /* Yellow from image */
+    padding: 12px;
+    margin: var(--spacing-md) -2rem;
+    /* Extend to edges */
+    color: #d32f2f;
+    /* Red text */
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+/* Features */
+.promo-features {
+    text-align: left;
+    margin-bottom: var(--spacing-lg);
+    padding: 0 var(--spacing-sm);
+}
+
+.promo-features ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.promo-features li {
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Action Area */
+.action-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-lg);
+}
+
+.qr-code-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qr-image-container {
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+    border: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    padding: 5px;
+}
+
+.qr-code-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.qr-pattern {
+    width: 100px;
+    height: 100px;
+    background-image: radial-gradient(#000 20%, transparent 20%), radial-gradient(#000 20%, transparent 20%);
+    background-color: #fff;
+    background-position: 0 0, 5px 5px;
+    background-size: 10px 10px;
+}
+
+.scan-text {
+    font-size: 0.9rem;
+    color: #000;
+    font-weight: 500;
+}
+
+.whatsapp-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-30px);
+}
+
+/* CTA Text */
+.cta-text-section {
+    margin-bottom: var(--spacing-lg);
+}
+
+.cta-text-section h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 0;
+}
+
+.to-text {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #000;
+}
+
+.phone-number {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #000;
+    margin-top: 4px;
+}
+
+/* Delivery Info */
+.delivery-info {
+    margin-bottom: var(--spacing-lg);
+    font-weight: 600;
+    color: #000;
+}
+
+.delivery-info p {
+    margin-bottom: 4px;
+    color: #000;
+}
+
+/* Footer */
+.promo-footer {
+    font-size: 0.9rem;
+    color: #333;
+    border-top: 2px solid var(--primary-gold);
+    padding-top: var(--spacing-md);
+}
+
+.disclaimer {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 4px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .promo-card {
+        padding: var(--spacing-md);
+        margin: 0 var(--spacing-sm);
+    }
+
+    .announcement-bar {
+        margin: var(--spacing-md) -1rem;
+        font-size: 1rem;
+    }
+
+    .promo-title {
+        font-size: 2rem;
+    }
+
+    .phone-number {
+        font-size: 1.8rem;
+    }
+
+    .action-area {
+        gap: var(--spacing-md);
+    }
+}
